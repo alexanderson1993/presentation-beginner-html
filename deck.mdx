@@ -1,23 +1,242 @@
-import { Head } from 'mdx-deck'
+import { Head, Appear, Image } from 'mdx-deck'
+import Anatomy from './components/anatomy';
+import { Split } from 'mdx-deck/layouts'
 
-export { default as theme } from './theme'
+export {default as theme} from './theme'
 
 <Head>
-  <title>Presentation Title</title>
+  <title>Begining HTML</title>
 </Head>
 
 # Hello
 
+Go here to get started: <http://bit.ly/html-starter>
+
 ---
 
-## Edit this file
+## Hi there! 👋
 
-To create your presentation
+![This is Me](/images/me.jpg)
 
-```notes
-- Create speaker notes in fenced code blocks
+---
+
+# What to Expect
+
+
+Make a Website
+
+You teach yourself
+
+Lots of interaction - <http://bit.ly/html-starter>
+
+---
+
+<div style={{display:'flex', flexDirection:'column', alignItems:'center'}}>
+
+# What NOT to Expect
+
+<img src="/images/matrix.gif" style={{width: '150%'}}/>
+</div>
+
+---
+
+# Let's get Started!
+
+<http://bit.ly/html-starter>
+
+---
+
+# The Web
+
+  <Appear>
+  <h2>URL</h2>
+  <h2>HTTP</h2>
+  <h2>HTML</h2>
+  </Appear>
+
+---
+
+# URL
+
+`http://example.com`
+<Appear>
+  <a href="https://url.spec.whatwg.org/">https://url.spec.whatwg.org/</a>
+  <p><em>Last Updated 21 August 2018</em></p>
+  <h1>😱</h1>
+  </Appear>
+
+---
+
+# HTTP
+
+
+*The **Hypertext Transfer Protocol (HTTP)** is an application protocol for distributed, collaborative, and hypermedia information systems.*
+
+<Appear>
+  <h1>🤔</h1>
+</Appear>
+
+---
+
+<Image src="/images/server.svg" size="75%"/>
+
+---
+# HTML
+
+<Appear>
+<h2><code>Hyper Text Markup Language</code></h2>
+</Appear>
+
+---
+
+<Anatomy />
+
+---
+
+# Tags!
+
+```
+<html>
+<head>
+<body>
 ```
 
 ---
 
-<https://github.com/jxnblk/mdx-deck>
+# Head Tags!
+
+```
+<base>
+<link />
+<meta />
+<object>
+<script>
+<style>
+<title>
+```
+
+---
+export default Split
+
+
+# Block Tags!
+
+```
+<p>                 <del>
+<h1> - <h6>         <div>
+<dl>                <figure>
+<dt>                <figcaption>
+<dd>                <footer>
+<ol>                <header>
+<ul>                <hr>
+<li>                <ins>
+<address>           <menu>
+<article>           <nav>
+<aside>             <noscript>
+<blockquote>        <pre>
+<section>
+```
+---
+export default Split
+
+
+# Inline Tags!
+
+```
+<a>          <mark>       <br />              
+<abbr>       <q>          <bdi>               
+<dfn>        <rb>         <bdo>               
+<em>         <rp>         <cite>              
+<strong>     <rt>         <data>              
+<code>       <rtc>        <del>               
+<kbd>        <ruby>       <ins>               
+<samp>       <sub>        <map>
+<var>        <sup>        <object>
+<b>          <template>   <param />
+<i>          <time>       <source>
+<u>          <wbr />      <track>
+<small>      <area />     <video>
+<s>          <audio>      <iframe>
+<strike>     <canvas>
+<font>       <embed>
+<span>       <img />
+```
+---
+export default Split
+
+
+# Form Tags!
+
+```
+<form>
+<button>
+<datalist>
+<fieldset>
+<input>
+<keygen>
+<label>
+<legend>
+<meter>
+<option>
+<output>
+<progress>
+<select>
+<textarea>
+```
+---
+export default Split
+
+
+# Table Tags!
+
+```
+<table>
+<tr>
+<th>
+<td>
+<colgroup>
+<col>
+<caption>
+<thead>
+<tbody>
+<tfoot>
+```
+---
+export default Split
+
+# Depricated Tags!
+
+```
+<basefont />        <frame />
+<isindex />         <noframes>
+<dir>               <listing>
+<center>            <plaintext>
+<acronym>           <xmp>
+<big>               <nextid />
+<tt>                <blink>
+<applet>            <marquee>
+<frameset>          <nobr>
+<noembed>
+```
+
+---
+
+# Let's Do It!
+
+<http://bit.ly/html-starter>
+
+---
+
+# So What?
+<https://news.ycombinator.com/item?id=11639619>
+
+---
+
+## Thanks 🙌
+
+
+<https://ralexanderson.com>
+
+<https://github.com/alexanderson1993>
+
+<https://twitter.com/ralex1993>
