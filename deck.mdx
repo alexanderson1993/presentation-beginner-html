@@ -12,11 +12,12 @@ export {default as theme} from './theme'
 
 Go here to get started: <http://bit.ly/html-starter>
 
+Follow along: <https://alexanderson1993.github.io/presentation-beginner-html>
 ---
 
 ## Hi there! 👋
 
-![This is Me](/images/me.jpg)
+<img src={require("file-loader!./images/me.jpg")} alt="This is me" />
 
 ---
 
@@ -35,7 +36,7 @@ Lots of interaction - <http://bit.ly/html-starter>
 
 # What NOT to Expect
 
-<img src="/images/matrix.gif" style={{width: '150%'}}/>
+<img src={require("file-loader!./images/matrix.gif")} style={{width: '150%'}}/>
 </div>
 
 ---
@@ -49,9 +50,9 @@ Lots of interaction - <http://bit.ly/html-starter>
 # The Web
 
   <Appear>
-  <h2>URL</h2>
-  <h2>HTTP</h2>
-  <h2>HTML</h2>
+  {[<h2 key="url">URL</h2>,
+  <h2 key="http">HTTP</h2>,
+  <h2 key="html">HTML</h2>]}
   </Appear>
 
 ---
@@ -60,9 +61,9 @@ Lots of interaction - <http://bit.ly/html-starter>
 
 `http://example.com`
 <Appear>
-  <a href="https://url.spec.whatwg.org/">https://url.spec.whatwg.org/</a>
-  <p><em>Last Updated 21 August 2018</em></p>
-  <h1>😱</h1>
+  {[<a key="spec" href="https://url.spec.whatwg.org/">https://url.spec.whatwg.org/</a>,
+  <p key="updated"><em>Last Updated 21 August 2018</em></p>,
+  <h1 key="ahh!">😱</h1>]}
   </Appear>
 
 ---
@@ -73,19 +74,19 @@ Lots of interaction - <http://bit.ly/html-starter>
 *The **Hypertext Transfer Protocol (HTTP)** is an application protocol for distributed, collaborative, and hypermedia information systems.*
 
 <Appear>
-  <h1>🤔</h1>
-</Appear>
+{[  <h1 key="huh">🤔</h1>
+]}</Appear>
 
 ---
 
-<Image src="/images/server.svg" size="75%"/>
+<Image src={require("file-loader!./images/server.svg")} size="75%"/>
 
 ---
 # HTML
 
 <Appear>
-<h2><code>Hyper Text Markup Language</code></h2>
-</Appear>
+{[<h2 key="html"><code>Hyper Text Markup Language</code></h2>
+]}</Appear>
 
 ---
 
@@ -284,3 +285,5 @@ export default Split
 <https://github.com/alexanderson1993>
 
 <https://twitter.com/ralex1993>
+
+<https://alexanderson1993.github.io/presentation-beginner-html/>
