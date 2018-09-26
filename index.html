@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<meta name='viewport' content='width=device-width,initial-scale=1'>
+<style>*{box-sizing:border-box}body{font-family:system-ui,sans-serif;margin:0}html,body{overflow:hidden}</style>
+<meta name='generator' content='mdx-deck'>
+<title data-head="true">Begining HTML</title><style data-styled-components="xhmZQ kmKUJZ eGsEPm zIEGn enxKql dYzIWH fLHsBx gUhEPt jHprQs bJSzQT fGKxXW eDQTdr nzjvV iDQISK czxQiJ eCoqJu cgkYdk cXgiMa hnohUl jlCnmb hOCGEu fbxTAJ bNhvRs">
+/* sc-component-id: sc-bdVaJa */
+.sc-bdVaJa {} .czxQiJ{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;height:100%;} @media print{.czxQiJ{display:none;}}.eCoqJu{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;margin-bottom:8px;margin-left:auto;margin-right:auto;} @media print{.eCoqJu{display:none;}}
+/* sc-component-id: sc-bwzfXH */
+.sc-bwzfXH {} .hnohUl{-webkit-appearance:none;-moz-appearance:none;appearance:none;border:4px solid transparent;background-clip:padding-box;border-radius:9999px;width:8px;height:8px;color:inherit;opacity:0.5;margin:0px;padding:4px;color:#fff;background-color:#fff;} .hnohUl:focus{outline:none;box-shadow:0 0 0 1px;}.jlCnmb{-webkit-appearance:none;-moz-appearance:none;appearance:none;border:4px solid transparent;background-clip:padding-box;border-radius:9999px;width:8px;height:8px;color:inherit;opacity:0.125;margin:0px;padding:4px;color:#fff;background-color:#fff;} .jlCnmb:focus{outline:none;box-shadow:0 0 0 1px;}
+/* sc-component-id: sc-htpNat */
+.sc-htpNat {} .cXgiMa{position:fixed;left:0;right:0;bottom:0;}
+/* sc-component-id: sc-bxivhb */
+.sc-bxivhb {} .fbxTAJ{cursor:pointer;width:64px;height:100vh;}
+/* sc-component-id: sc-ifAKCX */
+.sc-ifAKCX {} .hOCGEu{position:fixed;top:0;left:0;bottom:0;}
+/* sc-component-id: sc-EHOje */
+.sc-EHOje {} .bNhvRs{position:fixed;top:0;right:0;bottom:0;}
+/* sc-component-id: sc-bZQynM */
+.sc-bZQynM {} .kmKUJZ{overflow-x:hidden;width:100%;height:100%;} @media print{.kmKUJZ{height:auto;overflow-x:visible;}}
+/* sc-component-id: sc-gzVnrw */
+.sc-gzVnrw {} .eGsEPm{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;width:100%;height:100%;-webkit-transition-property:-webkit-transform;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transform:translateX(0%);-ms-transform:translateX(0%);transform:translateX(0%);} @media print{.eGsEPm{height:auto;display:block;}}
+/* sc-component-id: sc-htoDjs */
+.sc-htoDjs {} .zIEGn{-webkit-flex:none;-ms-flex:none;flex:none;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;overflow:hidden;width:100%;height:100%;padding-left:32px;padding-right:32px;} @media print{.zIEGn{width:100vw;height:100vh;page-break-after:always;page-break-inside:avoid;-webkit-print-color-adjust:exact;}} @media screen and (min-width:40em){.zIEGn{padding-left:64px;padding-right:64px;}} @media screen and (min-width:52em){.zIEGn{padding-left:128px;padding-right:128px;}}
+/* sc-component-id: sc-dnqmqq */
+.sc-dnqmqq {} .xhmZQ{font-family:system-ui,sans-serif;font-size:16px;text-align:center;width:100vw;height:100vh;color:#fff;background-color:#000;} @media print{.xhmZQ{font-size:24px;height:auto;}} @media screen and (min-width:64em){.xhmZQ{font-size:32px;}}
+/* sc-component-id: sc-iwsKbI */
+.sc-iwsKbI {} .cgkYdk{-webkit-flex:none;-ms-flex:none;flex:none;width:50%;}
+/* sc-component-id: sc-fjdhpX */
+.sc-fjdhpX {} .dYzIWH{line-height:1.25;font-size:3em;margin-bottom:16px;margin-top:16px;color:heading;}
+/* sc-component-id: sc-jzJRlG */
+.sc-jzJRlG {}
+/* sc-component-id: sc-cSHVUG */
+.sc-cSHVUG {} .bJSzQT{line-height:1.25;font-size:2em;margin-bottom:16px;margin-top:16px;color:heading;}
+/* sc-component-id: sc-kAzzGY */
+.sc-kAzzGY {}
+/* sc-component-id: sc-hMqMXs */
+.sc-hMqMXs {} .gUhEPt{color:#08f;}
+/* sc-component-id: sc-kEYyzF */
+.sc-kEYyzF {} .fLHsBx{font-size:1.5em;line-height:2;}
+/* sc-component-id: sc-cvbbAY */
+.sc-cvbbAY {} .nzjvV{font-family:Menlo,monospace;text-align:left;white-space:pre-wrap;font-size:1em;margin:0px;padding:8px;color:#f0f;background-color:#333;line-height:2;}
+/* sc-component-id: sc-jWBwVP */
+.sc-jWBwVP {} .fGKxXW{font-family:Menlo,monospace;color:#f0f;background-color:codeBackground;}
+/* sc-component-id: sc-jDwBTQ */
+.sc-jDwBTQ {} .eDQTdr{background-position:center;background-repeat:no-repeat;background-size:75%;background-image:url(8fc4d1c5229d8f79549f4231ff6483b6.svg);width:100vw;height:100vh;}
+/* sc-component-id: sc-iRbamj */
+.sc-iRbamj {} .iDQISK{width:100vw;height:100vh;}</style>
+</head>
+<body>
+<div id=root><div><div class="sc-dnqmqq xhmZQ" mode="NORMAL" step="0" width="100vw" height="100vh" color="text"><div class="sc-bZQynM kmKUJZ"><div class="sc-gzVnrw eGsEPm"><div class="sc-htoDjs zIEGn"><div><h1 class="sc-jzJRlG enxKql sc-fjdhpX dYzIWH" font-size="4" color="heading">Hello</h1><p class="sc-kEYyzF fLHsBx" font-size="2">Go here to get started: <a class="sc-hMqMXs gUhEPt" href="http://bit.ly/html-starter" color="link">http://bit.ly/html-starter</a></p></div></div><div class="sc-htoDjs zIEGn"><div><h2 class="sc-kAzzGY jHprQs sc-cSHVUG bJSzQT" font-size="3" color="heading">Hi there! 👋</h2><img src="bef750dab34efa496014fb09d15d9a66.jpg" alt="This is me"/></div></div><div class="sc-htoDjs zIEGn"><div><h1 class="sc-jzJRlG enxKql sc-fjdhpX dYzIWH" font-size="4" color="heading">What to Expect</h1><p class="sc-kEYyzF fLHsBx" font-size="2">Make a Website</p><p class="sc-kEYyzF fLHsBx" font-size="2">You teach yourself</p><p class="sc-kEYyzF fLHsBx" font-size="2">Lots of interaction - <a class="sc-hMqMXs gUhEPt" href="http://bit.ly/html-starter" color="link">http://bit.ly/html-starter</a></p></div></div><div class="sc-htoDjs zIEGn"><div><div style="display:flex;flex-direction:column;align-items:center"><h1 class="sc-jzJRlG enxKql sc-fjdhpX dYzIWH" font-size="4" color="heading">What NOT to Expect</h1><img src="455476ab75bb5b8839c265d796bc6185.gif" style="width:150%"/></div></div></div><div class="sc-htoDjs zIEGn"><div><h1 class="sc-jzJRlG enxKql sc-fjdhpX dYzIWH" font-size="4" color="heading">Let&#x27;s get Started!</h1><p class="sc-kEYyzF fLHsBx" font-size="2"><a class="sc-hMqMXs gUhEPt" href="http://bit.ly/html-starter" color="link">http://bit.ly/html-starter</a></p></div></div><div class="sc-htoDjs zIEGn"><div><h1 class="sc-jzJRlG enxKql sc-fjdhpX dYzIWH" font-size="4" color="heading">The Web</h1><h2 style="visibility:hidden">URL</h2><h2 style="visibility:hidden">HTTP</h2><h2 style="visibility:hidden">HTML</h2></div></div><div class="sc-htoDjs zIEGn"><div><h1 class="sc-jzJRlG enxKql sc-fjdhpX dYzIWH" font-size="4" color="heading">URL</h1><p class="sc-kEYyzF fLHsBx" font-size="2"><code class="sc-jWBwVP fGKxXW" color="code">http://example.com</code></p><a href="https://url.spec.whatwg.org/" style="visibility:hidden">https://url.spec.whatwg.org/</a><p style="visibility:hidden"><em>Last Updated 21 August 2018</em></p><h1 style="visibility:hidden">😱</h1></div></div><div class="sc-htoDjs zIEGn"><div><h1 class="sc-jzJRlG enxKql sc-fjdhpX dYzIWH" font-size="4" color="heading">HTTP</h1><p class="sc-kEYyzF fLHsBx" font-size="2"><em>The <strong>Hypertext Transfer Protocol (HTTP)</strong> is an application protocol for distributed, collaborative, and hypermedia information systems.</em></p><h1 style="visibility:hidden">🤔</h1></div></div><div class="sc-htoDjs zIEGn"><div><div class="sc-jDwBTQ eDQTdr" src="8fc4d1c5229d8f79549f4231ff6483b6.svg" width="100vw" height="100vh"></div></div></div><div class="sc-htoDjs zIEGn"><div><h1 class="sc-jzJRlG enxKql sc-fjdhpX dYzIWH" font-size="4" color="heading">HTML</h1><h2 style="visibility:hidden"><code>Hyper Text Markup Language</code></h2></div></div><div class="sc-htoDjs zIEGn"><div><main><style>
+        :root {
+          /* body
+          ----------------------------------------------------*/
+          --body-bg: #272822;
+          --body-color: #fff;
+          --body-font_family: &quot;Courier New&quot;, Courier, monospace;
+          --body-font_size: 1rem;
+          --body-line_height: 1.5rem;
+          --body-font: var(--body-font_size)/var(--body-line_height) var(--body-font_family);
+          
+          /* tag
+          ----------------------------------------------------*/
+          --tag-color: #569cd6;
+          --tag-padding: 0.8em;
+          --tag-border-color: var(--border-color);
+          --corner-brace-color: #808080;
+          
+          /* attribute
+          ----------------------------------------------------*/
+          --attribute-name-color: #9cdcfe;
+          --attribute-value-color: #ce9178;
+          --attribute-hover-color: #fff;
+          
+          --element-content-color: #d4d4d4;
+          --border-color: #a2a2a2;
+          --data-attr-color: #a2a2a2;
+          --attribute-padding: var(--tag-padding);  
+          
+          /* content
+          ----------------------------------------------------*/
+          --content-hover-color: #fff;
+          --content-padding: var(--tag-padding);
+          
+           /* element
+          ----------------------------------------------------*/
+          --element-title-color: var(--data-attr-color);
+          --element-title-border_color: var(--data-attr-color);
+          
+          /* blockquote
+          ----------------------------------------------------*/
+          --blockquote-color: var(--data-attr-color);
+          --blockquote-border_color: var(--data-attr-color);
+          --blockquote-padding: 0.3em;
+        }
+        
+        body {
+          font: var(--body-font);
+          background-color: var(--body-bg);
+          color: var(--body-color);
+        }
+        
+        a {
+          text-decoration: none;
+          display: inline-block;
+          vertical-align: top;
+          color: inherit;
+        }
+        
+        blockquote {
+          color: var(--blockquote-color);
+          padding: var(--blockquote-padding);
+          border-left: 0.2em solid var(--blockquote-border_color);
+        }
+        
+        :target {
+          color: var(--body-color);
+        }
+        
+        h1 {
+          text-align: center;
+          position: relative;
+          z-index: 11;
+        }
+        
+        .html-element {
+          display: flex;
+          justify-content: center;
+          margin: 10em auto 0;
+          position: relative;
+          max-width: 58em;
+        }
+        
+        .l-description-holder {
+          margin-top: 11em;
+          margin-right: 2em;
+          margin-left: 2em;
+        }
+        
+        .l-description-holder ol {
+          color: var(--data-attr-color);
+        }
+        
+        h2 {
+          text-align: center;
+        }
+        
+        .html-element::before {
+          content: attr(data-element-name);
+          color: var(--element-title-color);
+          position: absolute;
+          top: -7.9em;
+          right: 0;
+          text-align: center;
+          padding: 0.1em 0.5em;
+          z-index: 5;
+          background-color: var(--body-bg);
+          cursor: pointer;
+        }
+        
+        .html-element::after {
+          content: &quot;&quot;;
+          position: absolute;
+          top: -7.1em;
+          right: 1em;
+          left: 1em;
+          margin: 0 auto;
+          height: 7em;
+          border: 0.09em solid var(--element-title-border_color);
+          border-bottom: 0;
+        }
+        
+        .html-element__close-tag,
+        .html-element__open-tag,
+        .html-element__content {
+          background-color: var(--body-bg);
+        }
+        
+        .html-element:hover::before {
+          --element-title-color: var(--content-hover-color);
+        }
+        
+        .html-element:hover::after {
+          --element-title-border_color: var(--content-hover-color);
+        }
+        
+        .html-element__close-tag:hover::before,
+        .html-element__open-tag:hover::before,
+        .html-element__tag {
+          color: var(--tag-color);
+        }
+        
+        .html-element__close-tag,
+        .html-element__open-tag {
+          position: relative;
+          border: 0.09em solid var(--tag-border-color);
+        }
+        
+        .html-element__close-tag &gt; a,
+        .html-element__open-tag &gt; a,
+        .html-element__content &gt; a {
+          padding: var(--tag-padding);
+        }
+        
+        .html-element__open-tag::before {
+          max-width: 7em;
+        }
+        
+        .html-element__close-tag::before,
+        .html-element__open-tag::before {
+          color: var(--data-attr-color);
+          position: absolute;
+          right: 0;
+          bottom: -5em;
+          left: 0;
+          margin: 0 auto;
+          text-align: center;
+          padding: 0.1em;
+          background-color: var(--body-bg);
+          z-index: 5;
+        }
+        
+        .html-element__close-tag::after,
+        .html-element__open-tag::after {
+          content: &quot;&quot;;
+          position: absolute;
+          right: 0;
+          bottom: -3.2em;
+          left: 0;
+          margin: 0 auto;
+          height: 100%;
+          width: 1px;
+          z-index: -1;
+          background-color: var(--tag-border-color);
+        }
+        
+        .html-element__open-tag::before {
+          content: attr(data-tag-type);
+        }
+        
+        .html-element__close-tag:hover,
+        .html-element__open-tag:hover {
+          cursor: pointer;
+          --tag-border-color: var(--tag-color);
+        }
+        
+        .html-element__close-tag::before {
+          content: attr(data-tag-type);
+          min-width: 3em;
+        }
+        
+        .html-element__attribute-name {
+          color: var(--attribute-name-color);
+          position: relative;
+        }
+        
+        .html-element__attribute-holder {
+          position: relative;
+        }
+        
+        .html-element__attribute-holder::before {
+          content: attr(data-attribute-name);
+          color: var(--data-attr-color);
+          position: absolute;
+          top: -7em;
+          min-width: 8.5em;
+          text-align: center;
+          z-index: 7;
+          padding: 0.1em;
+          background-color: var(--body-bg);
+          border: 0.09em solid var(--border-color);
+        }
+        
+        .html-element__attribute-holder:hover::before {
+          color: var(--attribute-hover-color);
+          border-color: var(--attribute-hover-color);
+        }
+        
+        .html-element__attribute-name::before {
+          content: attr(data-attribute-name);
+        }
+        
+        .html-element__attribute-name::before,
+        .html-element__attribute-value::before {
+          color: var(--data-attr-color);
+          position: absolute;
+          top: -4em;
+          right: 0;
+          left: 0;
+          margin: 0 auto;
+          text-align: center;
+          z-index: 5;
+          padding: 0.1em;
+          background-color: var(--body-bg);
+        }
+        
+        .html-element__attribute-name::before {
+          max-width: 2.2xem;
+        }
+        
+        .html-element__attribute-value::before {
+          max-width: 3em;
+        }
+        
+        .html-element__attribute-name::after,
+        .html-element__attribute-value::after {
+          content: &quot;&quot;;
+          position: absolute;
+          bottom: 1.6em;
+          right: 0;
+          left: 0;
+          margin: 0 auto;
+          height: 500%;
+          width: 1px;
+          background-color: var(--border-color);
+        }
+        
+        .html-element__attribute-name:hover::after {
+          background-color: var(--attribute-name-color);
+        }
+        
+        .html-element__attribute-value:hover::after {
+          background-color: var(--attribute-value-color);
+        }
+        
+        .html-element__attribute-name:hover::before {
+          color: var(--attribute-name-color);
+        }
+        
+        .html-element__attribute-value,
+        .html-element__attribute-value:hover::before {
+          color: var(--attribute-value-color);
+        }
+        
+        .html-element__attribute-value {
+          position: relative;
+        }
+        
+        .html-element__attribute-value::before {
+          content: attr(data-attribute-value);
+        }
+        
+        .html-element__attribute-equal-sign,
+        .html-element__corner-brace-left,
+        .html-element__corner-brace-right {
+          color: var(--corner-brace-color);
+        }
+        
+        .html-element__content {
+          color: var(--element-content-color);
+          position: relative;
+          border: 0.09em solid var(--border-color);
+          margin: 0 1em;
+        }
+        
+        .html-element__content::before {
+          content: attr(data-content-name);
+          color: var(--data-attr-color);
+          position: absolute;
+          bottom: -5em;
+          right: 0;
+          left: 0;
+          margin: 0 auto;
+          max-width: 4em;
+          text-align: center;
+          z-index: 5;
+          padding: 0.1em;
+          background-color: var(--body-bg);
+        }
+        
+        .html-element__content::after {
+          content: &quot;&quot;;
+          position: absolute;
+          right: 0;
+          bottom: -3.2em;
+          left: 0;
+          margin: 0 auto;
+          height: 100%;
+          width: 1px;
+          z-index: -1;
+          background-color: var(--border-color);
+        }
+        
+        .html-element__content:hover {
+          cursor: pointer;
+          border-color: var(--content-hover-color);
+        }
+        
+        .html-element__content:hover::before {
+          color: var(--content-hover-color);
+        }
+        
+        .html-element__content:hover::after {
+          background-color: var(--content-hover-color);
+        }
+        
+        @media screen and (max-width: 64rem) {
+          .html-element {
+            flex-direction: column;
+            align-items: flex-start;
+          }
+          
+          .html-element__content {
+            margin: 1em 0 1em 2em;
+          }
+          
+          .html-element__open-tag::before {
+            top: -10em;
+            bottom: auto;
+          }
+          
+          .html-element__open-tag::after {
+            top: -8.2em;
+            height: 8em;
+            bottom: auto;
+          }
+          
+          .html-element::after {
+            top: 0;
+            bottom: 0;
+            left: 0;
+            height: 8em;
+            margin: auto;
+            border-bottom: 0.09em solid var(--element-title-border_color);
+            border-left: 0;
+            z-index: -1;
+          }
+          
+          .html-element::before {
+            top: 1em;
+          }
+        }
+        </style><section class="l-element-holder"><h1>Anatomy of an HTML element</h1><div class="html-element" data-element-name="HTML element"><div class="html-element__open-tag" data-tag-type="Opening Tag"><a href="#openTag"><span class="html-element__corner-brace-left">&lt;</span><span class="html-element__tag">p</span> <span class="html-element__attribute-holder" data-attribute-name="Attribute"><object type="dirty/hack"><a href="#attributeName"><span class="html-element__attribute-name" data-attribute-name="Name">class</span></a></object><span class="html-element__attribute-equal-sign">=</span><object type="dirty/hack"><a href="#attributeValue"><span class="html-element__attribute-value" data-attribute-value="Value">&quot;description&quot;</span></a></object></span><span class="html-element__corner-brace-right">&gt;</span></a></div><div class="html-element__content" data-content-name="Content"><a href="#content">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></div><div class="html-element__close-tag" data-tag-type="Closing Tag"><a href="#closeTag"><span class="html-element__corner-brace-left">&lt;/</span><span class="html-element__tag">p</span><span class="html-element__corner-brace-right">&gt;</span></a></div></div></section></main></div></div><div class="sc-htoDjs zIEGn"><div><h1 class="sc-jzJRlG enxKql sc-fjdhpX dYzIWH" font-size="4" color="heading">Tags!</h1><pre class="sc-cvbbAY nzjvV" font-size="1" color="pre">&lt;html&gt;
+&lt;head&gt;
+&lt;body&gt;
+</pre></div></div><div class="sc-htoDjs zIEGn"><div><h1 class="sc-jzJRlG enxKql sc-fjdhpX dYzIWH" font-size="4" color="heading">Head Tags!</h1><pre class="sc-cvbbAY nzjvV" font-size="1" color="pre">&lt;base&gt;
+&lt;link /&gt;
+&lt;meta /&gt;
+&lt;object&gt;
+&lt;script&gt;
+&lt;style&gt;
+&lt;title&gt;
+</pre></div></div><div class="sc-htoDjs zIEGn"><div class="sc-iRbamj iDQISK"><div class="sc-bdVaJa czxQiJ"><div class="sc-iwsKbI cgkYdk" width="0.5"><h1 class="sc-jzJRlG enxKql sc-fjdhpX dYzIWH" font-size="4" color="heading">Block Tags!</h1></div><div class="sc-iwsKbI cgkYdk" width="0.5"><pre class="sc-cvbbAY nzjvV" font-size="1" color="pre">&lt;p&gt;                 &lt;del&gt;
+&lt;h1&gt; - &lt;h6&gt;         &lt;div&gt;
+&lt;dl&gt;                &lt;figure&gt;
+&lt;dt&gt;                &lt;figcaption&gt;
+&lt;dd&gt;                &lt;footer&gt;
+&lt;ol&gt;                &lt;header&gt;
+&lt;ul&gt;                &lt;hr&gt;
+&lt;li&gt;                &lt;ins&gt;
+&lt;address&gt;           &lt;menu&gt;
+&lt;article&gt;           &lt;nav&gt;
+&lt;aside&gt;             &lt;noscript&gt;
+&lt;blockquote&gt;        &lt;pre&gt;
+&lt;section&gt;
+</pre></div></div></div></div><div class="sc-htoDjs zIEGn"><div class="sc-iRbamj iDQISK"><div class="sc-bdVaJa czxQiJ"><div class="sc-iwsKbI cgkYdk" width="0.5"><h1 class="sc-jzJRlG enxKql sc-fjdhpX dYzIWH" font-size="4" color="heading">Inline Tags!</h1></div><div class="sc-iwsKbI cgkYdk" width="0.5"><pre class="sc-cvbbAY nzjvV" font-size="1" color="pre">&lt;a&gt;          &lt;mark&gt;       &lt;br /&gt;              
+&lt;abbr&gt;       &lt;q&gt;          &lt;bdi&gt;               
+&lt;dfn&gt;        &lt;rb&gt;         &lt;bdo&gt;               
+&lt;em&gt;         &lt;rp&gt;         &lt;cite&gt;              
+&lt;strong&gt;     &lt;rt&gt;         &lt;data&gt;              
+&lt;code&gt;       &lt;rtc&gt;        &lt;del&gt;               
+&lt;kbd&gt;        &lt;ruby&gt;       &lt;ins&gt;               
+&lt;samp&gt;       &lt;sub&gt;        &lt;map&gt;
+&lt;var&gt;        &lt;sup&gt;        &lt;object&gt;
+&lt;b&gt;          &lt;template&gt;   &lt;param /&gt;
+&lt;i&gt;          &lt;time&gt;       &lt;source&gt;
+&lt;u&gt;          &lt;wbr /&gt;      &lt;track&gt;
+&lt;small&gt;      &lt;area /&gt;     &lt;video&gt;
+&lt;s&gt;          &lt;audio&gt;      &lt;iframe&gt;
+&lt;strike&gt;     &lt;canvas&gt;
+&lt;font&gt;       &lt;embed&gt;
+&lt;span&gt;       &lt;img /&gt;
+</pre></div></div></div></div><div class="sc-htoDjs zIEGn"><div class="sc-iRbamj iDQISK"><div class="sc-bdVaJa czxQiJ"><div class="sc-iwsKbI cgkYdk" width="0.5"><h1 class="sc-jzJRlG enxKql sc-fjdhpX dYzIWH" font-size="4" color="heading">Form Tags!</h1></div><div class="sc-iwsKbI cgkYdk" width="0.5"><pre class="sc-cvbbAY nzjvV" font-size="1" color="pre">&lt;form&gt;
+&lt;button&gt;
+&lt;datalist&gt;
+&lt;fieldset&gt;
+&lt;input&gt;
+&lt;keygen&gt;
+&lt;label&gt;
+&lt;legend&gt;
+&lt;meter&gt;
+&lt;option&gt;
+&lt;output&gt;
+&lt;progress&gt;
+&lt;select&gt;
+&lt;textarea&gt;
+</pre></div></div></div></div><div class="sc-htoDjs zIEGn"><div class="sc-iRbamj iDQISK"><div class="sc-bdVaJa czxQiJ"><div class="sc-iwsKbI cgkYdk" width="0.5"><h1 class="sc-jzJRlG enxKql sc-fjdhpX dYzIWH" font-size="4" color="heading">Table Tags!</h1></div><div class="sc-iwsKbI cgkYdk" width="0.5"><pre class="sc-cvbbAY nzjvV" font-size="1" color="pre">&lt;table&gt;
+&lt;tr&gt;
+&lt;th&gt;
+&lt;td&gt;
+&lt;colgroup&gt;
+&lt;col&gt;
+&lt;caption&gt;
+&lt;thead&gt;
+&lt;tbody&gt;
+&lt;tfoot&gt;
+</pre></div></div></div></div><div class="sc-htoDjs zIEGn"><div class="sc-iRbamj iDQISK"><div class="sc-bdVaJa czxQiJ"><div class="sc-iwsKbI cgkYdk" width="0.5"><h1 class="sc-jzJRlG enxKql sc-fjdhpX dYzIWH" font-size="4" color="heading">Depricated Tags!</h1></div><div class="sc-iwsKbI cgkYdk" width="0.5"><pre class="sc-cvbbAY nzjvV" font-size="1" color="pre">&lt;basefont /&gt;        &lt;frame /&gt;
+&lt;isindex /&gt;         &lt;noframes&gt;
+&lt;dir&gt;               &lt;listing&gt;
+&lt;center&gt;            &lt;plaintext&gt;
+&lt;acronym&gt;           &lt;xmp&gt;
+&lt;big&gt;               &lt;nextid /&gt;
+&lt;tt&gt;                &lt;blink&gt;
+&lt;applet&gt;            &lt;marquee&gt;
+&lt;frameset&gt;          &lt;nobr&gt;
+&lt;noembed&gt;
+</pre></div></div></div></div><div class="sc-htoDjs zIEGn"><div><h1 class="sc-jzJRlG enxKql sc-fjdhpX dYzIWH" font-size="4" color="heading">Let&#x27;s Do It!</h1><p class="sc-kEYyzF fLHsBx" font-size="2"><a class="sc-hMqMXs gUhEPt" href="http://bit.ly/html-starter" color="link">http://bit.ly/html-starter</a></p></div></div><div class="sc-htoDjs zIEGn"><div class="sc-iRbamj iDQISK"><div class="sc-bdVaJa czxQiJ"><div class="sc-iwsKbI cgkYdk" width="0.5"><h1 class="sc-jzJRlG enxKql sc-fjdhpX dYzIWH" font-size="4" color="heading">Let&#x27;s Learn More</h1></div><div class="sc-iwsKbI cgkYdk" width="0.5"><p class="sc-kEYyzF fLHsBx" font-size="2"><a class="sc-hMqMXs gUhEPt" href="https://www.youtube.com/watch?v=5ePVoAgvU1k&amp;list=PL41lfR-6DnOq3BebucTNMSVDojCIiv_en" color="link">Video Tutorial</a></p><p class="sc-kEYyzF fLHsBx" font-size="2"><a class="sc-hMqMXs gUhEPt" href="https://internetingishard.com" color="link">Interneting Is Hard</a></p><p class="sc-kEYyzF fLHsBx" font-size="2"><a class="sc-hMqMXs gUhEPt" href="https://webdev-guild.github.io/apprentice/html.html" color="link">Webdev Guild</a></p><p class="sc-kEYyzF fLHsBx" font-size="2"><a class="sc-hMqMXs gUhEPt" href="https://medium.com/@GarrettLevine/5-projects-to-complete-when-starting-to-learn-front-end-web-development-48e8a1ce3178" color="link">Hardcore Projects</a></p></div></div></div></div><div class="sc-htoDjs zIEGn"><div class="sc-iRbamj iDQISK"><div class="sc-bdVaJa czxQiJ"><div class="sc-iwsKbI cgkYdk" width="0.5"><h1 class="sc-jzJRlG enxKql sc-fjdhpX dYzIWH" font-size="4" color="heading">Let&#x27;s Build Something</h1></div><div class="sc-iwsKbI cgkYdk" width="0.5"><p class="sc-kEYyzF fLHsBx" font-size="2">Portfolio/Resume Website</p><p class="sc-kEYyzF fLHsBx" font-size="2">Recipe Book</p><p class="sc-kEYyzF fLHsBx" font-size="2">Fandom Explosion</p><p class="sc-kEYyzF fLHsBx" font-size="2">Bookmarks Homepage</p><p class="sc-kEYyzF fLHsBx" font-size="2">Birthday Card Website</p></div></div></div></div><div class="sc-htoDjs zIEGn"><div class="sc-iRbamj iDQISK"><div class="sc-bdVaJa czxQiJ"><div class="sc-iwsKbI cgkYdk" width="0.5"><h1 class="sc-jzJRlG enxKql sc-fjdhpX dYzIWH" font-size="4" color="heading">Let&#x27;s Host Something (for Free!)</h1></div><div class="sc-iwsKbI cgkYdk" width="0.5"><p class="sc-kEYyzF fLHsBx" font-size="2"><a class="sc-hMqMXs gUhEPt" href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/Publishing_your_website" color="link">Mozilla on Publishing your Website</a></p><p class="sc-kEYyzF fLHsBx" font-size="2"><a class="sc-hMqMXs gUhEPt" href="https://surge.sh" color="link">surge</a></p><p class="sc-kEYyzF fLHsBx" font-size="2"><a class="sc-hMqMXs gUhEPt" href="https://zeit.co/now" color="link">now</a></p><p class="sc-kEYyzF fLHsBx" font-size="2"><a class="sc-hMqMXs gUhEPt" href="https://www.netlify.com" color="link">netlify</a></p><p class="sc-kEYyzF fLHsBx" font-size="2"><a class="sc-hMqMXs gUhEPt" href="https://pages.github.com" color="link">Github Pages</a></p></div></div></div></div><div class="sc-htoDjs zIEGn"><div><h1 class="sc-jzJRlG enxKql sc-fjdhpX dYzIWH" font-size="4" color="heading">So What?</h1><p class="sc-kEYyzF fLHsBx" font-size="2"><a class="sc-hMqMXs gUhEPt" href="https://news.ycombinator.com/item?id=11639619" color="link">https://news.ycombinator.com/item?id=11639619</a></p></div></div><div class="sc-htoDjs zIEGn"><div><h2 class="sc-kAzzGY jHprQs sc-cSHVUG bJSzQT" font-size="3" color="heading">Thanks 🙌</h2><p class="sc-kEYyzF fLHsBx" font-size="2"><a class="sc-hMqMXs gUhEPt" href="https://ralexanderson.com" color="link">https://ralexanderson.com</a></p><p class="sc-kEYyzF fLHsBx" font-size="2"><a class="sc-hMqMXs gUhEPt" href="https://github.com/alexanderson1993" color="link">https://github.com/alexanderson1993</a></p><p class="sc-kEYyzF fLHsBx" font-size="2"><a class="sc-hMqMXs gUhEPt" href="https://twitter.com/ralex1993" color="link">https://twitter.com/ralex1993</a></p></div></div></div></div></div></div><div class="sc-htpNat cXgiMa"><div class="sc-bdVaJa eCoqJu"><button class="sc-bwzfXH hnohUl" title="go to: 0" color="text"></button><button class="sc-bwzfXH jlCnmb" title="go to: 1" color="text"></button><button class="sc-bwzfXH jlCnmb" title="go to: 2" color="text"></button><button class="sc-bwzfXH jlCnmb" title="go to: 3" color="text"></button><button class="sc-bwzfXH jlCnmb" title="go to: 4" color="text"></button><button class="sc-bwzfXH jlCnmb" title="go to: 5" color="text"></button><button class="sc-bwzfXH jlCnmb" title="go to: 6" color="text"></button><button class="sc-bwzfXH jlCnmb" title="go to: 7" color="text"></button><button class="sc-bwzfXH jlCnmb" title="go to: 8" color="text"></button><button class="sc-bwzfXH jlCnmb" title="go to: 9" color="text"></button><button class="sc-bwzfXH jlCnmb" title="go to: 10" color="text"></button><button class="sc-bwzfXH jlCnmb" title="go to: 11" color="text"></button><button class="sc-bwzfXH jlCnmb" title="go to: 12" color="text"></button><button class="sc-bwzfXH jlCnmb" title="go to: 13" color="text"></button><button class="sc-bwzfXH jlCnmb" title="go to: 14" color="text"></button><button class="sc-bwzfXH jlCnmb" title="go to: 15" color="text"></button><button class="sc-bwzfXH jlCnmb" title="go to: 16" color="text"></button><button class="sc-bwzfXH jlCnmb" title="go to: 17" color="text"></button><button class="sc-bwzfXH jlCnmb" title="go to: 18" color="text"></button><button class="sc-bwzfXH jlCnmb" title="go to: 19" color="text"></button><button class="sc-bwzfXH jlCnmb" title="go to: 20" color="text"></button><button class="sc-bwzfXH jlCnmb" title="go to: 21" color="text"></button><button class="sc-bwzfXH jlCnmb" title="go to: 22" color="text"></button><button class="sc-bwzfXH jlCnmb" title="go to: 23" color="text"></button></div></div><div class="sc-ifAKCX hOCGEu sc-bxivhb fbxTAJ" role="button" title="Previous Slide"></div><div class="sc-EHOje bNhvRs sc-bxivhb fbxTAJ" role="button" title="Next Slide"></div></div>
+<script src="main.js"></script>
+</body>
+</html>
